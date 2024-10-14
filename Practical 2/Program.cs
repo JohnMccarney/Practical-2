@@ -37,7 +37,7 @@ class Program
         Console.WriteLine($"Decrypted: {decrypted}");
     }
 
-    // Method that displays the menu
+    // Method displaying menu
     static void PrintMenu()
     {
         Console.WriteLine("Select a language option:");
@@ -48,7 +48,7 @@ class Program
         Console.WriteLine("0. Exit");
     }
 
-    // Method to get user's option and handle input errors
+    // Method for user's option and handle input errors
     static int InputOption()
     {
         int option = -1;
@@ -64,7 +64,7 @@ class Program
         return option;
     }
 
-    // Method to return the appropriate greeting message
+    // Method to return the appropriate greeting message in the language the 'user' picks
     static string GetMessage(int language)
     {
         switch (language)
@@ -84,7 +84,7 @@ class Program
         }
     }
 
-    // Method to count words in a string where each word starts with an uppercase letter
+    // Method that counts words in a string and each word starts with an uppercase letter
     static int CountWords(string str)
     {
         int count = 0;
